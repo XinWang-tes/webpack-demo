@@ -1,0 +1,29 @@
+.cruise-agents{
+  &-content-cards{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-types {
+    display: flex;
+    background: #fff;
+    flex: 1;
+    justify-content: space-evenly;
+  }
+  &-types-item{
+    text-transform: uppercase;
+    width: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    p{
+      font-size: 12px;
+    }
+    strong{
+      margin-top: 30px;
+      font-size: 20px;
+    }
+  }
+}

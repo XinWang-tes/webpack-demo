@@ -1,0 +1,43 @@
+.cruise-status-card{
+  &-container{
+    position: relative;
+    text-align: center;
+    min-width: 200px;
+    margin-right: 20px;
+    flex: 1;
+    &.building{
+      background: #ff9a2a;
+      .cruise-status-card-icon{
+        animation: rotateR 2s linear infinite;
+      }
+    }
+    &.idle{
+      background: #7fbc39;
+    }
+    .cruise-status-card-icon{
+      font-size: 144px;
+      opacity: 0.2;
+      color: #fff;
+      display: inline-block;
+    }
+  }
+  &-title{
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+  &-total{
+    color: #fff;
+    font-size: 48px;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+  }
+}
+@keyframes rotateR {
+  from { transform: rotate(0deg) }
+  //50% { transform: rotate(180deg) }
+  to { transform: rotate(360deg) }
+}

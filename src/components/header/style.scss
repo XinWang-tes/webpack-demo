@@ -1,0 +1,52 @@
+.cruise-header{
+  height: 80px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 0 5px #ddd;
+  background: #fff;
+  &-logo{
+    height: 40px;
+    width: auto;
+    margin-top: 20px;
+  }
+  &-avatar{
+    position: absolute;
+    right: 100px;
+    top: 20px;
+    padding-right: 25px;
+    img{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  }
+  &-arrow{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+  }
+  &-dropdown{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 0 5px #ddd;
+    padding: 6px 0;
+  }
+  &-dropdown-item{
+    cursor: pointer;
+    text-align: left;
+    line-height: 30px;
+    padding-left: 10px;
+    min-width: 100px;
+    &:hover{
+      background: #efefef;
+    }
+    i{
+      margin-right: 10px;
+    }
+  }
+}

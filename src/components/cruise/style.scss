@@ -1,0 +1,19 @@
+.cruise{
+  &-container{
+    height: 100%;
+    background: #f3f3f3;
+  }
+  &-body{
+    display: flex;
+    height: calc(100% - 80px);
+    min-width: 990px;
+    max-width: 1189px;
+    margin: 0 auto;
+  }
+  &-content{
+    flex: 1;
+    padding: 20px 0px 0 40px;
+    overflow: auto;
+    box-sizing: border-box;
+  }
+}

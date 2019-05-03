@@ -1,0 +1,87 @@
+.cruise-agent-card{
+  &-container{
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 0 20px 0 120px;
+    position: relative;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &-os{
+    font-size: 80px;
+    margin-right: 40px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+  &-top{
+    margin-bottom: 20px;
+    i{
+      margin-right: 10px;
+    }
+    div{
+      margin-right: 20px;
+    }
+  }
+  &-top, &-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: default;
+    i, span{
+      vertical-align: middle;
+    }
+  }
+  &-bottom{
+    position: relative;
+    i{
+      cursor: pointer;
+    }
+  }
+  &-name {
+    span{
+      color: #00b4cf;
+    }
+  }
+  &-status{
+    color: #fff;
+    padding: 0 4px;
+    margin-right: 20px;
+  }
+  &-status.idle{
+    background: #7f8c39;
+  }
+  &-status.building{
+    background: #ff9a2a;
+  }
+  &-resource{
+    background: #efefef;
+    padding: 0 5px;
+    margin-right: 10px;
+    i{
+      margin-left: 5px;
+    }
+  }
+  &-deny{
+    color: #fff;
+    background: #00b4cf;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    position: absolute;
+    right: 0;
+    top: -4px;
+    i{
+      position: relative;
+      transform: translateY(-1px);
+      display: inline-block;
+      margin-right: 10px;
+    }
+    cursor: pointer;
+    &:hover{
+      background: #01869a;
+    }
+  }
+}
